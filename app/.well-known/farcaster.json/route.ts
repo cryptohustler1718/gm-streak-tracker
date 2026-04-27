@@ -11,14 +11,13 @@ import { NextResponse } from "next/server";
  * Once signed, paste the header, payload, and signature values below.
  */
 export async function GET() {
-  const appUrl = process.env.NEXT_PUBLIC_URL || "https://your-app.vercel.app";
+  const appUrl = process.env.NEXT_PUBLIC_URL || "https://gm-streak-tracker.vercel.app";
 
   return NextResponse.json({
     accountAssociation: {
-      // ⚠️ REPLACE these with your signed values from the manifest tool
-      header: process.env.FARCASTER_HEADER || "",
-      payload: process.env.FARCASTER_PAYLOAD || "",
-      signature: process.env.FARCASTER_SIGNATURE || "",
+      header: "eyJmaWQiOjU0NzMyMSwidHlwZSI6ImF1dGgiLCJrZXkiOiIweDRGNThhMUNlMzIwNGM1MGFkMGRjREZjNGE0ODJlRTI4MjE0NmRmRkIifQ",
+      payload: "eyJkb21haW4iOiJnbS1zdHJlYWstdHJhY2tlci52ZXJjZWwuYXBwIn0",
+      signature: "+3E9LIGbcwM3X0vc4+CohbO7VG9hnT2Hkqtb7nxrQk5dER/oKUX5DC3EtEzZlZoSDOk8E0QopkO1z3/mjI2Qdxs=",
     },
     frame: {
       version: "1",
